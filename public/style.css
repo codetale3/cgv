@@ -1,0 +1,99 @@
+*{
+    font-family: 'CJONLYONENEW', "맑은 고딕", '돋움', Dotum, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #666;
+}
+span{
+    visibility: hidden;
+}
+ul{
+    list-style:none;
+    display: flex;
+    margin: 0px;
+}
+
+#header{
+    background: #fdfcf0 url(https://img.cgv.co.kr/r2014/images/common/bg/bg_header.gif) repeat-x 0 0
+}
+#main{
+    background-color: blue;
+}
+#footer{
+    background-color: green;
+}
+
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+#header .hyperlink{
+    height: 30px;
+    margin: 0 auto;
+    float: left;
+}
+#header a{
+    height:30px;
+    background-image: url(https://img.cgv.co.kr/r2014/images/sprite/common_sprite_area_v4_2016.png);
+    cursor: pointer;
+    padding: 0 10px;
+    display: inline-block;
+    border-left: 1px solid rgb(128 128 128 / 50%);
+}
+
+.hyperlink .cgv-app{
+    width: 74px;
+    background-position: 10px -714px;
+}
+.hyperlink .facebook{
+    width: 44px;
+    background-position: -85px -714px;
+}
+.hyperlink .instagram{
+    width: 60px;
+    background-position: -263px -714px;
+}
+.hyperlink .discount{
+    width: 85px;
+    background-position: -151px -714px;
+}
+#header .user-inter{
+    height: 30px;
+    margin: 0 auto;
+    float: right;
+}
+.user-inter .login{
+    width: 29px;
+    background-position: 10px 9px;
+}
+.user-inter .join{
+    width: 39px;
+    background-position: -42px 9px;
+}
+.user-inter .mycgv{
+    width: 39px;
+    background-position: -103px 9px;
+}
+.user-inter .vip{
+    width: 62px;
+    background-position: -170px 9px;
+}
+.user-inter .club-service{
+    width: 53px;
+    background-position: -254px 9px;
+}
+.user-inter .customer{
+    width: 38px;
+    background-position: -328px 9px;
+}
+.user-inter .showtimes{
+    width: 106px;
+    padding-right:0;
+    background-position: -388px 9px;
+}
+
+
+#header .head{
+    height: 120px;
+    margin: 0 auto;
+}

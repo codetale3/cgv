@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const nunjucks = require('nunjucks');
 const dotenv = require('dotenv');
+const path = require('path');
 
 dotenv.config();
 const indexRouter = require('./routes');
@@ -17,6 +18,7 @@ nunjucks.configure('views', {
 });
 
 app.use(morgan('dev'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(session({
   resave: false,
