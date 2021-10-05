@@ -5,11 +5,17 @@
     color: #666;
 }
 span{
-    visibility: hidden;
+    /* visibility: hidden; */
+    /* font-family: sans-serif; */
+    /* font-weight: 300; */
 }
 ul{
     list-style:none;
     display: flex;
+    margin: 0px;
+}
+
+h1{
     margin: 0px;
 }
 
@@ -26,13 +32,14 @@ ul{
 .container{
     width: 980px;
     margin: 0 auto;
+    height: 150px;
 }
 #header .hyperlink{
     height: 30px;
     margin: 0 auto;
     float: left;
 }
-#header a{
+.hyperlink a, .user-inter a{
     height:30px;
     background-image: url(https://img.cgv.co.kr/r2014/images/sprite/common_sprite_area_v4_2016.png);
     cursor: pointer;
@@ -96,4 +103,51 @@ ul{
 #header .head{
     height: 120px;
     margin: 0 auto;
+    top: 12px;
+    position: relative;
 }
+
+.logo{
+    width: 245px;
+    height: 80px;
+    display: inline-block;
+    top: 12px;
+    position: relative;
+}
+
+.head a{/* top: -10px; *//* position: relative; *//* display: inline-block; *//* height: 100px; */font-family: sans-serif;font-weight: 400;}
+
+.popup{height: 100px;width: 500px;/* background: red; */display: inline-block;text-align: center;}
+.search{
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    /* background-color: aliceblue; */
+    /* margin: 0; */
+}
+#cultureplex{
+    top: 12px;
+    position:relative;
+}
+#popup{
+    top: 15px;
+    position: relative;
+    padding-left: 0px;
+    /* font-family: sans-serif; */
+    /* font-weight: 400; */
+}
+#popup a{
+    width: 119px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search input {
+    width: 110px;
+    height: 24px;
+    top: 12px;
+    position: relative;
+}
+.search button{width: 44px;height: 30px;background-color: #e71a0f;background-image:none;color:#fff;font-weight: 500;top: 12px;left: -6px;position: relative;}
