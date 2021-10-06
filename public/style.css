@@ -3,6 +3,7 @@
     font-weight: 300;
     line-height: 1.2;
     color: #666;
+    margin: 0 auto;
 }
 span{
     /* visibility: hidden; */
@@ -20,10 +21,11 @@ h1{
 }
 
 #header{
-    background: #fdfcf0 url(https://img.cgv.co.kr/r2014/images/common/bg/bg_header.gif) repeat-x 0 0
+    background: #fdfcf0 url(https://img.cgv.co.kr/r2014/images/common/bg/bg_header.gif) repeat-x 0 0;
+    height: 150px;
 }
 #main{
-    background-color: blue;
+    
 }
 #footer{
     background-color: green;
@@ -32,7 +34,7 @@ h1{
 .container{
     width: 980px;
     margin: 0 auto;
-    height: 150px;
+    height: 100%;
 }
 #header .hyperlink{
     height: 30px;
@@ -151,3 +153,82 @@ h1{
     position: relative;
 }
 .search button{width: 44px;height: 30px;background-color: #e71a0f;background-image:none;color:#fff;font-weight: 500;top: 12px;left: -6px;position: relative;}
+
+
+#main{
+    background-position: 0 0;
+    background: url(https://img.cgv.co.kr/r2014/images/common/bg/bg_c_bricks.png) repeat-x 0 0px;
+    width: 100%;
+    height: 1200px;
+}
+
+#main .slider{width: 100%;height: 450px;margin: 0 auto;outline: 1px solid black;overflow: hidden;}
+
+#main .item-wrap a{
+    display: none;
+}
+
+#main .item-wrap-on a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+#main .btn-item{
+    width: 13px;
+    height: 13px;
+    background: url(https://img.cgv.co.kr/r2014/images/sprite/sprite_icon.png) no-repeat 0 -90px;
+    position: absolute;
+    overflow: hidden;
+    top: 565px;
+    text-indent: 100%;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+    border: none;
+    cursor: pointer;
+}
+
+.item-wrap-on .btn-item{
+    background-position: -16px -90px !important;
+}
+
+.slider .btn-move-prev{overflow: hidden;position: absolute;background-image: url(https://img.cgv.co.kr/r2014/images/sprite/sprite_btn.png);background-position: 0 -97px;border: none;width: 26px;height: 52px;white-space: nowrap;text-indent: 150%;top: 349px;left: 480px;background-color: transparent;cursor: pointer;}
+
+.slider .btn-move-next{
+    overflow: hidden;
+    position: absolute;
+    background-image: url(https://img.cgv.co.kr/r2014/images/sprite/sprite_btn.png);
+    background-position: -30px -97px;
+    border: none;
+    width: 26px;
+    height: 52px;
+    white-space: nowrap;
+    text-indent: 150%;
+    top: 349px;
+    left: 1397px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.slider .btn-move-auto{
+    overflow: hidden;
+    position: absolute;
+    background: url(https://img.cgv.co.kr/r2014/images/sprite/sprite_icon.png) no-repeat 0 -90px;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 13px;
+    height: 13px;
+    border: none;
+    top: 565px;
+    left: 978px;
+    cursor: pointer;
+}
+
+.slider .auto-true{
+    background-position: -48px -90px;
+}
+.slider .auto-false{
+    background-position: -32px -90px;
+}

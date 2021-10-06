@@ -49,8 +49,74 @@
 </div>
 </div>
 <div id="main">
+<div class="container">
+<div class="slider">
+<div class="item-wrap-on">
+<a><img src="https://img.cgv.co.kr/Front/Main/2021/0913/16315036396800.jpg" alt="VIP 익스프레스" style="width: 100%; height: 100%;"></a>
+<button type="button" class="btn-item" style="left: 888px; display: block;">VIP 익스프레스</button>
+</div>
+<div class="item-wrap">
+<a><img src="https://img.cgv.co.kr/Front/Main/2021/1004/16333547813370.jpg" alt="007 스탠딩 포스터 팩" style="width: 100%; height: 100%;"></a>
+<button type="button" class="btn-item" style="left: 906px; display: block;">007 스탠딩 포스터 팩</button>
+</div>
+<div class="item-wrap">
+<a><img src="https://img.cgv.co.kr/Front/Main/2021/1006/16335097273370.jpg" alt="베놈2 필름마크" style="width: 100%; height: 100%;"></a>
+<button type="button" class="btn-item" style="left: 924px; display: block;">베놈2 필름마크</button>
+</div>
+<div class="item-wrap">
+<a><img src="https://img.cgv.co.kr/Front/Main/2021/1006/16335195084410.jpg" alt="베놈2 SCREENX 포스터 팩" style="width: 100%; height: 100%;"></a>
+<button type="button" class="btn-item" style="left: 942px; display: block;">베놈2 SCREENX 포스터 팩</button>
+</div>
+<div class="item-wrap">
+<a><img src="https://img.cgv.co.kr/Front/Main/2021/1006/16335195084880.jpg" alt="베놈2 4DX 포스터 팩" style="width: 100%; height: 100%;"></a>
+<button type="button" class="btn-item" style="left: 960px; display: block;">베놈2 4DX 포스터 팩</button>
+</div>
+<button type="button" class="btn-move-prev">이전 페이지 이동</button>
+<button type="button" class="btn-move-next">다음 페이지 이동</button>
+<button type="button" class="btn-move-auto auto-false">자동 페이지 이동</button>
+</div>
+</div>
 </div>
 <div id="footer">
 </div>
+
+<script>
+Array.prototype.forEach.call(document.getElementsByClassName('btn-item'), function(element){
+    element.addEventListener('click', (e) => {
+        let wrap_on = document.getElementsByClassName('item-wrap-on')[0];
+        wrap_on.classList.toggle('item-wrap');
+        wrap_on.classList.toggle('item-wrap-on');
+        e.target.parentElement.classList.toggle('item-wrap');
+        e.target.parentElement.classList.toggle('item-wrap-on');
+    });
+})
+
+const moveItem = function(movenext){
+    let wrap_on = document.getElementsByClassName('item-wrap-on')[0];
+    wrap_on.classList.toggle('item-wrap');
+    wrap_on.classList.toggle('item-wrap-on');
+    let move_item;
+    if(movenext) move_item = wrap_on.nextElementSibling.classList.value == "item-wrap" ? wrap_on.nextElementSibling : wrap_on.parentElement.firstElementChild;
+    else move_item = wrap_on.previousElementSibling ? wrap_on.previousElementSibling : document.getElementsByClassName('item-wrap')[document.getElementsByClassName('item-wrap').length-1];
+
+    move_item.classList.toggle('item-wrap');
+    move_item.classList.toggle('item-wrap-on');
+}
+var moveItemAuto;
+document.getElementsByClassName('btn-move-prev')[0].addEventListener('click', (e) => moveItem(false));
+document.getElementsByClassName('btn-move-next')[0].addEventListener('click', (e) => moveItem(true));
+document.getElementsByClassName('btn-move-auto')[0].addEventListener('click', (e) => {
+    if(e.target.className.split(' ').indexOf('auto-false') > -1){
+        moveItemAuto = setInterval(moveItem(true), 20);
+        e.target.classList.toggle('auto-false');
+        e.target.classList.toggle('auto-true');
+    }else{
+        clearInterval(moveItemAuto);
+        e.target.classList.toggle('auto-false');
+        e.target.classList.toggle('auto-true');
+    }
+})
+
+</script>
 </body>
 </html>
