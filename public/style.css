@@ -133,11 +133,12 @@ ul{
     /* font-weight: 400; */
 }
 #popup a{
-    width: 119px;
+    width: 122px;
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    text-align: left;
 }
 
 .search input {
@@ -284,4 +285,80 @@ ul{
 
 .events.on{
     display:block;
+}
+
+.sidebar{
+    margin-top: 10px;
+    position: sticky;
+    z-index: 1;
+    left: 1465.5px;
+    width: 116px;
+    /* height: 478px; */
+    bottom: 321px;
+    /* outline: 3px solid #E71A0F; */
+    /* border-radius: 10px; */
+    /* background-color: #FDFCF0; */
+    padding-top: 10px;
+}
+
+.sidebar a{
+    margin: 6px;
+}
+.sidebar-content{
+    margin-top: 0;
+    width: 116px;
+    height: 478px;
+    outline: 3px solid #E71A0F;
+    border-radius: 10px;
+    background-color: #FDFCF0;
+    padding-top: 10px;
+}
+.btn-top{position: relative;left: -8px;bottom: 3px;width: 116px;}
+.btn-top a{
+    width: 116px;
+    height: 72px;
+    background: url(https://img.cgv.co.kr/r2014/images/common/btn/btn_top.png) no-repeat 0 0;
+    display: inline-block;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 31px;
+    z-index: 100;
+    width: 180px;
+    background-color: #323232;
+    /* height: 50px; */
+    left: -69px;
+    border: none;
+}
+.sub-menu.on{
+    display: block;
+}
+.sub-menu i{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 19px;
+    height: 10px;
+    background: url(https://img.cgv.co.kr/r2014/images/common/ico/ico_smenu_arrow.png) no-repeat 0 0;
+    margin-left: -9px;
+    border: none;
+}
+.sub-menu ul{flex-direction: column;padding: 7px 7px;border: 3px solid #828282;margin: 3px;}
+.sub-menu li{margin: 0;}
+.sub-menu a{
+    color: white;
+    font-size: 14px!important;
+    line-height: 35px;
+    width: 140px!important;
+}
+.sub-menu a:hover{
+    background:url(https://img.cgv.co.kr/r2014/images/common/ico/ico_smenu_hand.png) no-repeat 100% 10px;
+    background-postition:50% 0%;
+    color:#e71a0f;
+}
+.sub-menu li.last{
+    padding-top: 8px;
+    border-top:2px solid #828282;
+    margin-top: 8px;
 }
