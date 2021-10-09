@@ -4,15 +4,20 @@
     line-height: 1.2;
     color: #666;
     margin: 0 auto;
+    /* box-sizing: border-box; */
 }
 html,body{
     background-color: #FDFCF0;
 }
-
+a{
+    cursor:pointer;
+}
 ul{
     list-style:none;
     display: flex;
     margin: 0px;
+    padding: 0px;
+    align-items: center;
 }
 #header{
     background: #fdfcf0 url(https://img.cgv.co.kr/r2014/images/common/bg/bg_header.gif) repeat-x 0 0;
@@ -361,4 +366,105 @@ ul{
     padding-top: 8px;
     border-top:2px solid #828282;
     margin-top: 8px;
+}
+
+
+.login-hyperlink{
+    height: 29px;
+    background-color: #F1F0E5;
+    border-bottom: 1px solid #cacac0;
+}
+.login-hyperlink ul{
+    display: inline-flex;
+    float: right;
+    height: 100%;
+}
+.login-hyperlink li{
+    border-right: 1px solid #cacac0;
+    border-left: 1px solid #cacac0;
+    text-align: center;
+    width: 100px;
+}
+.login-hyperlink a{
+    padding-top: 5px;
+    display: block;
+    width: 100px;
+    float: left;
+    color: #666;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+.login-login{
+
+}
+.login-login-tap{margin-top: 30px;border-bottom: 2px solid #898987;width: 541px;}
+.login-login-tap ul{}
+.login-login-tap li{margin: 1px;}
+.login-login-tap a{display: block;width: 100px;height: 37px;background-color: #898987;border-radius: 5px;text-align: center;color: white;font-weight: 700;font-size: 13px;line-height: 37px;}
+.login-login-tap a.on{
+    background-color: #E71A0F;
+}
+.login-login-login{width: 541px;height: 298px;/* border-top: 2px solid #898987; */border-bottom: 2px solid #898987;}
+.login-login-login p{text-align: center;line-height: 56px;font-size: 13px;}
+#form-login ul{display: block;margin-left: 94px;}
+#form-login li{}
+#form-login #login-input-id{
+    width: 215px;
+    height: 33px;
+    margin-bottom: 5px;
+    background: url('https://img.cgv.co.kr/R2014/images/sprite/sprite_icon.png') 12px -230px no-repeat;
+    padding: 0 5px 0 40px;
+    border: 2px solid #b5b5b5;
+    line-height: 33px;
+}
+#form-login #login-input-pw{
+    width: 215px;
+    height: 33px;
+    margin-bottom: 5px;
+    background: url('https://img.cgv.co.kr/R2014/images/sprite/sprite_icon.png') 12px -261px no-repeat;
+    padding: 0 5px 0 40px;
+    border: 2px solid #b5b5b5;
+    line-height: 33px;
+}
+#form-login .btn-login{
+    width: 264px;
+    height: 42px;
+    line-height: 37px;
+    margin-top: 5px;
+    padding: 2px;
+    background: #e71a0f;
+    text-align: center;
+    margin-left: 94px;
+    border: none;
+}
+#form-login .btn-login span{
+    display: block;
+    width: 258px;
+    height: 36px;
+    border: 1px solid #f07469;
+    font-size: 15px;
+    color: #f2f0e5;
+    font-weight: 500;
+    line-height: 36px;
+}
+#form-login .btn-naver-login{
+    width: 264px;
+    height: 42px;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+}
+#form-login .login-find-user-inform{
+    margin-left: 94px;
+    font-size: 14px;
+    line-height: 41px;
+}
+#form-login .login-find-user-inform a{
+    font-size: 12px;
+    display: inline-block;
+    background: url(' https://img.cgv.co.kr/R2014/images/common/bg/bg_arrow03.png') right 1px no-repeat;
+    text-decoration: underline;
+    width: 85px;
+    background-position: right 2px;
 }

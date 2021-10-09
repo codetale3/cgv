@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', async(req, res, next) => {
     try{
-        res.render('main', {
+        res.render('login', {
         title: 'CGV',
     });
     }catch(error){
